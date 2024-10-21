@@ -49,7 +49,10 @@ export const AboutMe = ({ data }) => {
               </div>
             </div>
             <div className="download">
-              <NavLink to="#" onClick={handleOpen} className="hire-btn">
+              <NavLink
+                to="https://drive.google.com/file/d/1XQHa9Z4x_Q2O44l6X_im1lbPLy5SN3aU/view?usp=sharing"
+                className="hire-btn"
+              >
                 Download Resume <FaDownload />
               </NavLink>
             </div>
