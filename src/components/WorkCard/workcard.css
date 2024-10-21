@@ -1,0 +1,87 @@
+
+.card {
+    width: 18rem;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Card image container */
+  .card-image-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Card image */
+  .card-image {
+    width: 100%;
+    display: block;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover overlay for the image */
+  .hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(251, 251, 251, 0.15);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Show overlay on hover */
+  .card-image-container:hover .hover-overlay {
+    opacity: 1;
+  }
+  
+  /* Add zoom effect to the image on hover */
+  .card-image-container:hover .card-image {
+    transform: scale(1.1);
+  }
+  
+  /* Card body styling */
+  .card-body {
+    padding: 16px;
+    text-align: center;
+    text-align: left;
+  }
+  
+  /* Card title styling */
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+  }
+  
+  /* Card text styling */
+  .card-text {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 16px;
+  }
+  
+  /* Button styling */
+  .card-button {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 65%;
+    padding: 10px 0px;
+    color: #222;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    gap:10px
+
+  } 
+  
+  /* Change button background on hover */
+   .card-button:hover {
+    color: #098b7e;
+    font-weight: 600;
+    transition: all 0.5s ease ;
+  } 
+  
