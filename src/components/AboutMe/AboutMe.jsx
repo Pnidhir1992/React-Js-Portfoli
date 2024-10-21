@@ -2,10 +2,17 @@ import React from "react";
 import "./AbourMe.css";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { SocialIcons } from "../SocialiIcons/SocialIcons";
+import { NavLink } from "react-router-dom";
+import { FaDownload } from "react-icons/fa";
+// import "../Api/Api../New-resume.pdf";
 
 export const AboutMe = ({ data }) => {
-  // console.log(data.totalExp);
+  const handleOpen = (event) => {
+    event.preventDefault(); // Prevents navigation
+    window.open("../../New-resume.pdf", "_blank");
+  };
 
+  // console.log(data.totalExp);
   // console.log(SocialIcons);
   return (
     <div>
@@ -40,6 +47,11 @@ export const AboutMe = ({ data }) => {
                 </h3>
                 <p>{data.totalExp}</p>
               </div>
+            </div>
+            <div className="download">
+              <NavLink to="#" onClick={handleOpen} className="hire-btn">
+                Download Resume <FaDownload />
+              </NavLink>
             </div>
           </div>
         </div>
